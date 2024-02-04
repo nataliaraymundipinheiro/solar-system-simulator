@@ -9,4 +9,3 @@ G = 6.67428e-11 # Gravitational constant
 PLANET_SIZE = 15
 SCALE =  200 / AU # 1 astronomical unit = 200 pixels
 TIMESTEP = 60 * 60 * 24 # 1 day in seconds
-
