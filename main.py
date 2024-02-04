@@ -25,7 +25,7 @@ def createStructures():
                name='Sun')
     
     # Planets
-    mercury = Planet(x=-0.387*AU,
+    mercury = Planet(x=-0.467*AU,
                      y=0,
                      radius=8,
                      color=colors.GREY,
@@ -88,7 +88,6 @@ def run_simulation():
 
         # Update display
         pygame.display.update()
-
 
     # Quit pygame
     pygame.quit()
