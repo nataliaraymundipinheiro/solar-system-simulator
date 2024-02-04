@@ -1,7 +1,7 @@
 import pygame
 
-from constants import WIDTH, HEIGHT
-from constants import SCALE
+from utils.constants import WIDTH, HEIGHT
+from utils.constants import SCALE
 from math import sqrt, atan2, cos, sin
 
 from structures.structure import Structure

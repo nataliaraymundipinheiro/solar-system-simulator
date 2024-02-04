@@ -1,6 +1,7 @@
+from utils import colors
 
 class Structure:
-    def __init__(self, x, y, radius, color, mass, initial_velocity_x=0, initial_velocity_y=0) -> None:
+    def __init__(self, x, y, radius, mass, color=colors.WHITE, initial_velocity_x=0, initial_velocity_y=0) -> None:
         self.x = x
         self.y = y
         self.radius = radius # meters

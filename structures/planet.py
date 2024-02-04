@@ -1,8 +1,8 @@
-import colors
 import pygame
 
-from constants import WIDTH, HEIGHT, FONT_PYGAME
-from constants import AU, G, SCALE, TIMESTEP
+from utils import colors
+from utils.constants import WIDTH, HEIGHT, FONT_PYGAME
+from utils.constants import AU, G, SCALE, TIMESTEP
 from math import sqrt, atan2, cos, sin
 
 from structures.star import Star

@@ -1,8 +1,8 @@
-import colors
 import pygame
 
-from constants import WIDTH, HEIGHT
-from constants import AU
+from utils import colors
+from utils.constants import WIDTH, HEIGHT
+from utils.constants import AU
 
 from structures.planet import Planet
 from structures.star import Star
