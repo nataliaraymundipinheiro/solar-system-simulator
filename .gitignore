@@ -1,4 +1,6 @@
 __pycache__/
+structures/__pycache__/
+utils/__pycache__/
 .vscode/
 local/
 
