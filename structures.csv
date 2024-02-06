@@ -23,6 +23,7 @@ def createStructures():
                name='Sun')
     
     # Planets
+    -0.387
     mercury = Planet(x=-0.467*AU,
                      y=0,
                      radius=2.4397e6,

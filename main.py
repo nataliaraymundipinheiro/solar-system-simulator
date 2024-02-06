@@ -12,7 +12,7 @@ pygame.init()
 # Take in coordinates for the size of our window
 WINDOW = pygame.display.set_mode((WIDTH, HEIGHT)) # pygame surface
 # Window caption
-pygame.display.set_caption("Planets Simulation")
+pygame.display.set_caption("Star System Simulation")
 
 
 def createStructures():
@@ -25,7 +25,7 @@ def createStructures():
                name='Sun')
     
     # Planets
-    mercury = Planet(x=-0.467*AU,
+    mercury = Planet(x=-0.387*AU,
                      y=0,
                      radius=8,
                      color=colors.GREY,
@@ -88,6 +88,7 @@ def run_simulation():
 
         # Update display
         pygame.display.update()
+
 
     # Quit pygame
     pygame.quit()
