@@ -15,11 +15,13 @@ WINDOW = pygame.display.set_mode((WIDTH, HEIGHT)) # pygame surface
 pygame.display.set_caption("Star System Simulation")
 
 
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 def createStructures():
     # Stars
     sun = Star(x=0,
                y=0,
-               radius=30,
+               radius=696.34e6,
                color=colors.YELLOW,
                mass=1.989e30,
                name='Sun')
@@ -27,38 +29,40 @@ def createStructures():
     # Planets
     mercury = Planet(x=-0.387*AU,
                      y=0,
-                     radius=8,
+                     radius=2.4397e6,
                      color=colors.GREY,
                      mass=3.30104e23,
                      name='Mercury',
-                     initial_velocity_y=47.4e3)
+                     initial_velocity_y=47.9e3)
     
     venus   = Planet(x=-0.72*AU,
                      y=0, 
-                     radius=15,
+                     radius=6.0518e6,
                      color=colors.ORANGE,
                      mass=4.867e24,
                      name='Venus',
-                     initial_velocity_y=35.02e3)
+                     initial_velocity_y=35.0e3)
     
     earth   = Planet(x=-1*AU,
                      y=0,
-                     radius=16,
+                     radius=6.371e6,
                      color=colors.BLUE,
                      mass=5.972e24,
                      name='Earth',
-                     initial_velocity_y=29.783e3)
+                     initial_velocity_y=29.8e3)
     
-    mars    = Planet(x=-1.52*AU,
+    mars    = Planet(x=-1.449*AU,
                      y=0,
-                     radius=12,
+                     radius=3.3895e6,
                      color=colors.RED,
                      mass=6.39e23,
                      name='Mars',
-                     initial_velocity_y=24.077e3)
+                     initial_velocity_y=24.1e3)
 
     return [sun, mercury, venus, earth, mars]
 
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 def run_simulation():
     run = True
@@ -94,9 +98,14 @@ def run_simulation():
     pygame.quit()
 
 
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
 def main():
     run_simulation()
 
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
 if __name__ == "__main__":
     main()
 

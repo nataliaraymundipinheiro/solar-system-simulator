@@ -98,7 +98,10 @@ class Star(Structure):
 
         # Draw a circle that represents the object within the window, with a
         # certain color, at a certain site, with a certain radius
-        pygame.draw.circle(window, self.color, (x,y), self.radius)
+        # The star radius is divided by `scale` so that it doesn't swallow the whole
+        # screen
+        scale = 7
+        pygame.draw.circle(window, self.color, (x,y), self.radius / scale)
 
         # Name of star
         name_text = FONT.render(self.name, 1, WHITE)

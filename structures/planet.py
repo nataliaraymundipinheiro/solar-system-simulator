@@ -102,7 +102,8 @@ class Planet(Structure):
         
         # Draw a circle that represents the object within the window, with a
         # certain color, at a certain site, with a certain radius
-        pygame.draw.circle(window, self.color, (x,y), self.radius)
+        scale = 15
+        pygame.draw.circle(window, self.color, (x,y), self.radius * scale)
 
         # Add the text to represent what planet it is and how far it is from the
         # center star
